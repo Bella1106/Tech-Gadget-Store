@@ -1,5 +1,7 @@
 # Tech Gadget Store
 
+**Live demo:** https://bella1106.github.io/Tech-Gadget-Store/
+
 A responsive static e-commerce website prototype built with **HTML and CSS**. The project was originally developed for Electronic Commerce coursework at the University of Cape Town and has been cleaned for portfolio use.
 
 ## Overview
