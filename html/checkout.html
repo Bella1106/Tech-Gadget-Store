@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Checkout - Tech Gadget Store</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+
+    <body>
+
+        <!--HEADER-->
+        <header class="heroBanner">
+            <h1>
+                Tech Gadget Store
+            </h1>
+            <p>
+                Your one-stop shop for all the latest tech
+            </p>
+        </header>
+
+        <!--NAVIGATION-->
+        <!--respective buttons on navigation bar-->
+        <nav>
+            <a href="../index.html">Home</a>
+
+            <a href="about.html" >About us</a>
+
+            <a href="categories.html">Products</a>
+
+            <a href="brands.html" >Featured Brands</a>
+
+            <a href="contact.html">Get in contact</a>
+
+            <a href="cart.html">Cart </a>
+        </nav>
+
+        <!--MAIN CONTENT-->
+        <main class="contentSection">
+            <h2 class="centerHeading">Checkout</h2>
+
+            <form class="formBox">
+                <!--enter name-->
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+
+                <!--enter email-->
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+                <!--enter address-->
+                <label for="address">Delivery Address</label>
+                <textarea id="address" name="email" placeholder="Enter your delivery address" required></textarea>
+
+                <!--enter payment method-->
+                <label for="payment">Payment Method</label>
+                <select id="payment" name="payment" required>
+                    <option value="">Select a payment method</option>
+                    <option>Credit Card</option>
+                    <option>Debit Card</option>
+                    <option>EFT</option>
+                </select>
+
+                <!--order total-->
+                <label for="total">Order Total</label>
+                <input type="text" id="total" name="total" value="R19 999" readonly>
+
+                <!--buttons-->
+                <div class="buttonGroup">
+                    <a href="confirmation.html" class="primaryButton">Place Order</a>
+                    <a href="cart.html" class="secondaryButton">Return to Cart</a>
+                </div>
+            </form>
+        </main>
+
+        <!--FOOTER-->
+        <footer>
+            <p>&copy; 2026 Tech Gadget Store</p>
+            <p>Email: support@techgadgetstore.com</p>
+            <p>Cape Town, South Africa</p>
+        </footer>
+    </body>
+</html>

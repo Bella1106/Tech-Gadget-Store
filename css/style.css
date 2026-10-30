@@ -1,0 +1,927 @@
+/*general page styling*/
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f4f0fa;
+    margin: 0;
+}
+
+/*banner*/
+.heroBanner{
+    background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),url('../images/bannerupdate.JPG');
+    background-size: cover;
+    background-position: center;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.heroBanner h1{
+    font-size: 42px; 
+    margin-bottom: 10px
+}
+
+.heroBanner p{
+    font-size: 18px;
+}
+
+/*navigation bar*/
+nav{
+    background-color: rgba(110, 98, 136, 0.9);
+    padding: 10px;
+    text-align: center;
+}
+
+nav a{
+    color: white; 
+    margin: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+}
+
+nav a:hover{
+    color: #e6c8ee;
+}
+
+nav a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: #e6c8ee;
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after{
+    width: 100%;
+}
+
+/*intro section*/
+.heroSection{
+    padding: 40px;
+    text-align: center;
+}
+
+.heroSection p.intro{
+    font-size: 18px;
+}
+
+.introBox{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 35px;
+    background-color: #e6c8ee;
+    border-radius: 12px;
+    border: 2px solid white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.introBox:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12), 0 0 12px rgba(155, 89, 182, 0.2);
+}
+
+/*shared container*/
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+}
+
+/*section headings*/
+.sectionTitle{
+    color: rgb(104, 52, 153);
+}
+
+/*category cards*/
+.categoryWrapper{
+    margin-top: 30px;
+}
+
+.categoryCard{
+    background-color: #e6c8ee;
+    padding: 25px; 
+    margin: 15px;
+    border-radius: 12px;
+    width: 280px;
+    display: inline-block;
+    vertical-align: top;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.categoryCard:hover{
+    transform: translateY(-8px);
+
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+.categoryCard h3{
+    color: #5b2c83;
+}
+
+.categoryCard a{
+    background-color: #5b2c83;
+    color: white;
+    padding: 10px 20px; 
+    border-radius: 6px;
+    text-decoration: none;
+    display: inline-block;
+
+    position: relative;
+}
+
+.categoryCard a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: #5b2c83;
+    transition: width 0.3s ease;
+}
+
+.categoryCard a:hover::after{
+    width: 100%;
+}
+
+.categoryCard a:hover{
+    background-color: #4a216d;
+}
+
+/*featured product*/
+.featuredProduct{
+    background-color: #e6c8ee; 
+    padding: 40px 20px; 
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    clear: both;
+}
+
+.featuredInner{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.featuredProduct img{
+    width: 200px;
+    border-radius: 10px;
+    display: block;
+    margin: 15px auto;
+}
+
+.featuredProduct a{
+    background-color: #5b2c83;
+    color: white; 
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.featuredProduct a:hover{
+    background-color: #4a216d;
+}
+
+/*footer*/
+footer{
+    background-color: #3e1e5c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/*shared page header*/
+.pageHeader{
+    background-color: #3e1e5c;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/*main page content*/
+.pageContent{
+    max-width:1100px; margin: 0 auto;padding: 40px;
+}
+
+.pageHeading{
+    text-align: center; color: rgb(104, 52, 153);
+}
+
+/*about page design improvements*/
+.aboutSection{
+    background: linear-gradient(to bottom, #f4f0fa, #efe7fb);
+    border-radius: 16px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.aboutIntro{
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+    text-align: center;
+    line-height: 1.7;
+    color: #444;
+}
+
+.highlightBox{
+    background-color: #e6c8ee;
+}
+
+/*category section heading*/
+.categoryTitle{
+    color: #5b2c83;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.categoryIntro{
+    margin-bottom: 20px;
+    text-align: center;
+}
+.categorySection{
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: rgb(215, 205, 216);
+    border-radius: 12px;
+    border: 2px solid #e6c8ee;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.categorySection p{
+    text-align: center;
+}
+
+
+/*product listing layout usinf flexbox*/
+.productRow{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*product cards*/
+.productCard{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 260px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.30);
+    text-align: center;
+    border: 1px solid #eee;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+
+}
+
+.productCard:hover{
+    transform: translateY(-8px);
+    transition: 0.3s ease;
+
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+.productCard img{
+    width: 180px;
+    height: 180px;
+    border-radius: 8px; 
+    display: block;
+    margin: 0 auto 15px auto;
+    object-fit: cover;
+}
+
+.productCard a{
+    background-color: #e6c8ee;
+    color: #5b2c83;
+    padding: 10px 20px; 
+    border-radius: 6px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.productCard a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: #5b2c83;
+    transition: width 0.3s ease;
+}
+
+.productCard a:hover::after{
+    width: 100%;
+}
+
+.productCard a:hover{
+    background-color: #d8b3e6;
+}
+
+/*view all buttons*/
+.viewAll{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.viewAll a{
+    background-color: rgb(215, 205, 216);
+    color: #5b2c83;
+    padding: 10px 20px; 
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+
+    position: relative;
+}
+
+.viewAll a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: #5b2c83;
+    transition: width 0.3s ease;
+}
+
+.viewAll a:hover::after{
+    width: 100%;
+}
+
+.viewAll a:hover{
+    background-color: #e1dbe4;
+}
+
+/*shared content wrapper for normal pages*/
+.contentSection{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.centerHeading{
+    text-align: center;
+    color: rgb(104, 52, 153);
+}
+
+/*white info boxes*/
+.infoBox{
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+    margin-bottom: 25px;
+    border-top: 5px solid #5b2c83;
+
+    transition: all 0.3s ease;
+}
+
+.infoBox:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.infoBox h3{
+    margin-top: 0;
+    color: #5b2c83;
+    font-size: 24px;
+}
+
+/*divider in cart*/
+.itemDivider{
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+/*total text*/
+.totalPrice{
+    font-size: 20px;
+}
+
+/*additional buttons*/
+.primaryButton:hover{
+    background-color: #a997b9;
+}
+
+.primaryButton{
+    background-color: #e6c8ee;
+    color: #5b2c83;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.secondaryButton{
+    background-color: #e6c8ee;
+    color: #5b2c83;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.secondaryButton:hover{
+    background-color: #a997b9;
+}
+
+/*contact/checkout styling*/
+.formBox{
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+    max-width: 750px;
+    margin: 0 auto;
+    border: 1px solid #eee;
+}
+
+.formBox label{
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #5b2c83;
+    font-weight: bold;
+}
+
+.formBox input,
+.formBox textarea,
+.formBox select{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d8b3e6;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.formBox textarea{
+    min-height: 120px;
+}
+
+.confirmBox{
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+    border: 1px solid #eee;
+}
+
+.confirmBox h2{
+    color: #3e1e5c;
+}
+
+
+/*about page extras*/
+.infoBox p,
+.infoBox ul{
+    line-height: 1.7;
+}
+
+.infoBox ul{
+    padding-left: 20px;
+}
+
+/*product detail page layout*/
+.productPage{
+    padding: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.productDetailBox{
+    background-color: rgb(235, 229, 235);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.productDetailBox img{
+    width: 250px;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+.productDetailTitle{
+    color: rgb(104, 52, 153);
+}
+
+.productDetailSubtitle{
+    color: rgb(104, 52, 153);
+}
+
+.specList{
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+.productButtonRow{
+    margin-top: 20px;
+}
+
+/*videos on homepage*/
+.videoSection{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px;
+    text-align: center;
+}
+
+.videoRow{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.videoCard{
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.videoCard video{
+    width: 420px;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/*updated homepage videos and featured product layout*/
+.featuredSection{
+    background-color: #e6c8ee;
+    padding: 40px 20px;
+}
+
+.featuredSection h2{
+    text-align: center;
+
+}
+
+.featuredLayout{
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.featuredVideo video{
+    width: 260px;
+    border-radius: 12px;
+}
+
+.featuredCenter{
+    text-align: center;
+    max-width: 300px;
+}
+
+.featuredCenter img{
+    width: 200px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/*wishlist*/
+.wishlistBox{
+    margin-top: 25px;
+    text-align: center;
+}
+
+.wishlistBox label{
+    margin-right: 10px;
+    font-weight: bold;
+    color: #5b2c83;
+}
+
+.wishlistBox select{
+    padding: 10px;
+    border: 1px solid #d8b3e6;
+    border-radius: 6px;
+    margin-right: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*tablet and ipad responsiveness*/
+@media only screen and (max-width: 950px){
+
+    .heroBanner{
+        height: 220px;
+        padding: 20px;
+    }
+
+    .heroBanner h1{
+        font-size: 34px;
+    }
+
+    .heroBanner p{
+        font-size: 16px;
+    }
+
+    nav{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        padding: 12px;
+    }
+
+    nav a{
+        margin: 8px 10px;
+        font-size: 15px;
+    }
+
+    .heroSection, .container, .contentSection, .productPage, .videoSection, .pageContent{
+        padding: 25px 18px;
+        box-sizing: border-box;
+    }
+
+    .introBox, .categorySection, .infoBox, .formBox, .confirmBox, .productDetailBox{
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .categoryCard{
+        width: 240px;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .productCard{
+        width: 220px;
+        max-width: 100%;
+        box-sizing: border-box; 
+    }
+
+    .productCard img{
+        width: 150px;
+        height: 150px;
+    }
+
+    .productRow, .videoRow{
+        flex-wrap: wrap;
+        justify-content: center;
+        display: flex;
+        gap: 18px;
+    }
+
+    .featuredSection{
+        padding: 30px 18px;
+        box-sizing: border-box;
+    }
+
+    .featuredLayout{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        align-items: center;
+        justify-items: center;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .featuredVideo{
+        width: 200px;
+        max-width: 200px;
+    }
+
+    .featuredVideo video{
+        width: 200px;
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        border-radius: 12px;
+    }
+
+    .featuredVideo:first-child{
+        order: 1;
+    }
+
+    .featuredVideo:last-child{
+        order: 3;
+    }
+
+    .featuredCenter{
+        order: 2;
+        max-width: 260px;
+        text-align: center;
+    }
+
+    .featuredCenter img{
+        width: 160px;
+        max-width: 100%;
+        display: block;
+        margin: 0 auto 12px auto;
+    }
+
+    footer{
+        padding: 18px 12px;
+        font-size: 14px;
+    }
+}
+
+/*mobile responsiveness*/
+@media only screen and (max-width: 600px){
+    body{
+        font-size: 14px;
+    }
+
+    .heroBanner{
+        height: 160px;
+        padding: 20px 12px;
+    }
+
+    .heroBanner h1{
+        font-size: 22px;
+        margin-bottom: 6px;
+    }
+
+    .heroBanner p{
+        font-size: 12px;
+    }
+
+    nav{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px 12px;
+        padding: 10px;
+    }
+
+    nav a{
+        display: inline-block;
+        margin: 0;
+        font-size: 13px;
+    }
+
+    .heroSection, .container, .contentSection, .productPage, .videoSection, .pageContent{
+        padding: 20px 12px;
+        box-sizing: border-box;
+    }
+
+    .introBox, .categorySection, .infoBox, .formBox, .confirmBox, .productDetailBox{
+        padding: 18px 15px;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .categoryCard{
+        width: 100%;
+        max-width: 250px;
+        margin: 10px auto;
+        box-sizing: border-box;
+        padding: 14px 10px;
+    }
+
+    .productCard{
+        width: 100%;
+        max-width: 150px;
+        box-sizing: border-box; 
+        padding: 6px 2px;
+    }
+
+    .productCard p{
+        font-size: 13px;
+        line-height: 1.3;
+    }
+
+    .productCard img{
+        width: 90px;
+        height: 90px;
+    }
+
+    .productRow{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        margin: 0 auto;
+    }
+
+    .videoRow, .featuredLayout{
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+        gap: 16px;
+    }
+
+    .featuredSection{
+        padding: 22px 10px;
+        box-sizing: border-box;
+    }
+
+    .featuredVideo{
+        width: 100%;
+        max-width: 220px;
+    }
+
+    .featuredVideo video{
+        width: 100%;
+        max-width: 220px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        border-radius: 12px;
+    }
+
+    .featuredCenter{
+        width: 100%;
+        max-width: 230px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .featuredCenter img{
+        width: 140px;
+        max-width: 100%;
+        display: block;
+        margin: 0 auto 10px auto;
+    }
+
+    .featuredCenter h3{
+        font-size: 17px;
+    }
+
+    .featuredCenter p{
+        font-size: 13px;
+        line-height: 1.4;
+    }
+
+    .productButtonRow{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .primaryButton, .secondaryButton, .viewAll a, .categoryCard a, .productCard a{
+        max-width: 100%;
+        text-align: center;
+        font-size: 13px;
+        padding: 10px 14px;
+    }
+
+    .wishlistBox{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .wishlistBox label{
+        margin-right: 0;
+    }
+
+    .wishlistBox select{
+        margin-right: 0;
+        width: 100%;
+        max-width: 220px;
+    }
+
+    .specList{
+        text-align: center;
+    }
+
+    footer{
+        padding: 15px 10px;
+        font-size: 13px;
+    }
+}
